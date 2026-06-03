@@ -1,5 +1,7 @@
 # Related repositories
 
+Theme release **2.8.9** (Customizer, blog/single layouts, reading progress). Source of truth for version: private `style.css` header.
+
 | Repository | Visibility |
 |------------|------------|
 | [logic-encoder-theme](https://github.com/logicencoder/logic-encoder-theme) | Private — source |
