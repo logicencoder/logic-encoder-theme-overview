@@ -1,21 +1,26 @@
-# Logic Encoder Theme
+# Logic Encoder Enhanced — site theme
 
-Dark **presentation layer** for logicencoder.com — Customizer-driven homepage, application catalogue cards, blog layout, auth page templates, members-only routing, and SEO coordination with Logic Encoder plugins.
+Custom WordPress theme powering [logicencoder.com](https://logicencoder.com/), designed as the shared presentation layer for marketing pages, app discovery, blog content, and member-facing account/auth pages. Theme behavior is largely controlled through Customizer panels so operators can update site structure and copy without deploying PHP for every content change.
 
-Private theme: [logicencoder/logic-encoder-theme](https://github.com/logicencoder/logic-encoder-theme) (v2.8.x).
+## Tech stack
+
+| Layer | Technologies |
+|-------|--------------|
+| Platform | WordPress theme (PHP templates + hooks) |
+| Styling | Custom CSS design system and token variables |
+| Customization | WordPress Customizer (`theme_mod` pipeline) |
+| Content surfaces | Homepage, app cards, blog index, single posts, auth/account templates |
+| Quality checks | Playwright E2E tests in private repo |
 
 ## Homepage and catalogue
 
-WordPress **Customizer** with 20+ sections:
+WordPress Customizer exposes 20+ sections for homepage blocks, colors, typography, effects, footer content, app card slots, and auth/account layout choices. Operators can adjust structure and text without code deployments.
 
-- Global colors, typography, footer, visual effects (dot grid, scroll reveal, back-to-top)
-- Homepage hero and content blocks
-- Up to **eight application card slots** rendered via **`[le_app_cards]`**
-- Auth page layout options (cooperates with login plugin)
+The applications surface is powered by `[le_app_cards]`, which keeps tool discovery consistent with the rest of the site design system.
 
-## Blog
+## Blog experience
 
-Reading progress indicator, share controls, sticky sidebar, featured-post meta box. Optimized for long-form Logic Encoder articles and release notes.
+The theme includes a two-mode blog index and long-form single-post layout with sticky sidebar, reading progress, share controls, and related post sections. This keeps technical articles readable while preserving the same visual identity as product pages.
 
 ## Auth and members-only routes
 
