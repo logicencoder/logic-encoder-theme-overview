@@ -1,5 +1,7 @@
 # Logic Encoder Enhanced — site theme
 
+![Logic Encoder homepage — hero, tech stack chips, and the dark design system](theme.png)
+
 **Custom WordPress theme powering [logicencoder.com](https://logicencoder.com/) — marketing pages, app discovery, blog, and member account routes on one design system, with structure and copy driven from the Customizer instead of PHP deploys.**
 
 The theme is the shared presentation layer for every Logic Encoder surface on the site: landing sections, the applications catalogue, long-form articles, and the gated member area. It exists so operators can reorder homepage blocks, retune colors and typography, swap app cards, and adjust auth layouts without touching templates — and so feature plugins (stats dashboards, shop, login system) inherit one consistent dark visual language.
