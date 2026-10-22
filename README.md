@@ -29,7 +29,7 @@ Account and access-related surfaces fit into the wider site presentation. Visito
 
 ## Adjust the site through WordPress
 
-Customizer controls let the operator shape supported aspects of the presentation without manually rebuilding each page. Administrator integration and compatibility with the site's plugins support routine maintenance. Catalogue, article, account and Customizer screenshots would show more than the current homepage alone.
+Customizer controls let the operator shape supported aspects of the presentation without manually rebuilding each page. Administrator integration and compatibility with the site's plugins support routine maintenance.
 
 ---
 
