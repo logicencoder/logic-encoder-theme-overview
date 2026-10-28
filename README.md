@@ -15,21 +15,32 @@ A site presenting applications, technical writing and member content needs those
 
 The homepage introduces the site's work and gives visitors routes into its applications and content. Typography, spacing and a consistent visual system help the material feel like one site rather than a collection of disconnected pages. The featured image illustrates that first impression.
 
+The homepage is the entry point into the site's product and editorial content. Customizer choices let the owner shape that presentation within the established WordPress workflow.
+
 ## Browse applications
 
 Catalogue surfaces help visitors discover software products and open their detail pages. Product presentation works alongside the site's shop integration, connecting the public explanation with the next step in the buying journey. It gives applications a more useful home than a simple link list.
+
+An application catalogue gives visitors a consistent way to discover the available products. Move from a product listing into its supporting information without losing the site's visual context.
 
 ## Read and explore articles
 
 Blog layouts support browsing and reading the site's writing in the same visual language. Navigation helps readers move between articles and related areas. This keeps technical content and product discovery connected without forcing every page into the same layout.
 
+Article and archive views support browsing as well as arriving at a specific post. They keep the editorial side of the site connected to the wider product presentation.
+
 ## Support member areas
 
 Account and access-related surfaces fit into the wider site presentation. Visitors can move between public content and the relevant member journey with a consistent interface. The theme works with the site's access plugins rather than presenting those flows as a separate visual experience.
 
+Member-related surfaces help the public site and account journey feel coherent. The theme supplies presentation while the corresponding membership tools retain their own role.
+
 ## Adjust the site through WordPress
 
 Customizer controls let the operator shape supported aspects of the presentation without manually rebuilding each page. Administrator integration and compatibility with the site's plugins support routine maintenance.
+
+Central presentation choices make repeated site adjustments easier to manage. Review the affected pages in context so the homepage, catalogue and articles continue to work as one website.
+
 
 ---
 
