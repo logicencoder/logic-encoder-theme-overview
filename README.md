@@ -1,52 +1,51 @@
-# Logic Encoder Enhanced — site theme
+# Logic Encoder Enhanced — WordPress Theme
 
-Custom WordPress theme powering [logicencoder.com](https://logicencoder.com/), designed as the shared presentation layer for marketing pages, app discovery, blog content, and member-facing account/auth pages. Theme behavior is largely controlled through Customizer panels so operators can update site structure and copy without deploying PHP for every content change.
+![Logic Encoder Enhanced — WordPress Theme workspace](theme.png)
+
+A site presenting applications, technical writing and member content needs those areas to feel connected. Logic Encoder Enhanced brings them into a consistent WordPress presentation, with a configurable visual style and dedicated browsing surfaces.
 
 ## Tech stack
 
 | Layer | Technologies |
-|-------|--------------|
-| Platform | WordPress theme (PHP templates + hooks) |
-| Styling | Custom CSS design system and token variables |
-| Customization | WordPress Customizer (`theme_mod` pipeline) |
-| Content surfaces | Homepage, app cards, blog index, single posts, auth/account templates |
-| Quality checks | Playwright E2E tests in private repo |
+|---|---|
+| Application | PHP, WordPress |
+| Supporting technologies | HTML, CSS, JavaScript |
 
-## Homepage and catalogue
+## Present a clear homepage
 
-WordPress Customizer exposes 20+ sections for homepage blocks, colors, typography, effects, footer content, app card slots, and auth/account layout choices. Operators can adjust structure and text without code deployments.
+The homepage introduces the site's work and gives visitors routes into its applications and content. Typography, spacing and a consistent visual system help the material feel like one site rather than a collection of disconnected pages. The featured image illustrates that first impression.
 
-The applications surface is powered by `[le_app_cards]`, which keeps tool discovery consistent with the rest of the site design system.
+The homepage is the entry point into the site's product and editorial content. Customizer choices let the owner shape that presentation within the established WordPress workflow.
 
-## Blog experience
+## Browse applications
 
-The theme includes a two-mode blog index and long-form single-post layout with sticky sidebar, reading progress, share controls, and related post sections. This keeps technical articles readable while preserving the same visual identity as product pages.
+Catalogue surfaces help visitors discover software products and open their detail pages. Product presentation works alongside the site's shop integration, connecting the public explanation with the next step in the buying journey. It gives applications a more useful home than a simple link list.
 
-## Auth and members-only routes
+An application catalogue gives visitors a consistent way to discover the available products. Move from a product listing into its supporting information without losing the site's visual context.
 
-Dedicated templates: login, account, forgot password, reset, verify email, dashboard, about, contact. **`template_redirect`** and content filters enforce members-only pages when configured. Integrates with [logicencoder-login-system-plugin](https://github.com/logicencoder/logicencoder-login-system-plugin-overview).
+## Read and explore articles
 
-## SEO integration
+Blog layouts support browsing and reading the site's writing in the same visual language. Navigation helps readers move between articles and related areas. This keeps technical content and product discovery connected without forcing every page into the same layout.
 
-Disables conflicting Rank Math sitemap generation (dedicated [sitemap manager plugin](https://github.com/logicencoder/logicencoder-sitemap-manager-plugin-overview) owns XML). Daily sitemap regen hook. Homepage meta via [le-settings-plugin](https://github.com/logicencoder/le-settings-plugin-overview). **`logicencoder_login_redirect`** filter for post-auth navigation.
+Article and archive views support browsing as well as arriving at a specific post. They keep the editorial side of the site connected to the wider product presentation.
 
-## Plugin ecosystem
+## Support member areas
 
-Theme provides shells; feature plugins inject behavior:
+Account and access-related surfaces fit into the wider site presentation. Visitors can move between public content and the relevant member journey with a consistent interface. The theme works with the site's access plugins rather than presenting those flows as a separate visual experience.
 
-| Plugin | Theme cooperation |
-|--------|-------------------|
-| LE Shop | `application` post type archives |
-| MEXC / Gate / Gas | Shortcode pages inherit dark layout |
-| Login System | Auth template routing |
-| LE Settings | CSS variables from Customizer + settings API |
+Member-related surfaces help the public site and account journey feel coherent. The theme supplies presentation while the corresponding membership tools retain their own role.
 
-## Quality
+## Adjust the site through WordPress
 
-Playwright E2E tests under `tests/e2e/` in the private repo — homepage, auth flows, app cards regression.
+Customizer controls let the operator shape supported aspects of the presentation without manually rebuilding each page. Administrator integration and compatibility with the site's plugins support routine maintenance.
 
-See [REPOS.md](REPOS.md).
+Central presentation choices make repeated site adjustments easier to manage. Review the affected pages in context so the homepage, catalogue and articles continue to work as one website.
+
 
 ---
 
-**Made by [Logic Encoder](https://logicencoder.com)** · [GitHub](https://github.com/logicencoder) · [Contact](https://logicencoder.com/contact/)
+Private code: [logic-encoder-theme](https://github.com/logicencoder/logic-encoder-theme)
+
+See [REPOS.md](REPOS.md) for related repositories.
+
+**[Logic Encoder](https://logicencoder.com)** · [GitHub](https://github.com/logicencoder) · [Contact](https://logicencoder.com/contact/)
