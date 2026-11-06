@@ -2,45 +2,40 @@
 
 ![Logic Encoder Enhanced — WordPress Theme workspace](theme.png)
 
-A site presenting applications, technical writing and member content needs those areas to feel connected. Logic Encoder Enhanced brings them into a consistent WordPress presentation, with a configurable visual style and dedicated browsing surfaces.
+A WordPress site that presents software products, technical writing and member pages needs one visual system and one place to change it. Logic Encoder Enhanced is a custom theme for exactly that: a dark, technical design with a homepage built from editable sections, a manager for the application catalogue, page templates for the sign-in and account journey, and a long list of Customizer controls. It is built for a site owner who wants to change text, colours, fonts and layout from the WordPress Customizer instead of editing template files.
 
 ## Tech stack
 
 | Layer | Technologies |
 |---|---|
-| Application | PHP, WordPress |
-| Supporting technologies | HTML, CSS, JavaScript |
+| Theme | PHP and WordPress template hierarchy with Customizer API settings |
+| Front end | HTML, CSS and JavaScript, with effects that can be switched off |
+| Administration | A custom application manager and custom list screens for pages and posts |
+| Verification | Playwright end-to-end tests |
 
-## Present a clear homepage
+## Homepage
 
-The homepage introduces the site's work and gives visitors routes into its applications and content. Typography, spacing and a consistent visual system help the material feel like one site rather than a collection of disconnected pages. The featured image illustrates that first impression.
+The front page is assembled from sections whose wording the owner edits in the Customizer: a hero with an eyebrow line, a description, an optional animated terminal that types out a list of lines, and a row of pills; then an approach block, a capabilities block, an applications teaser, a blog teaser with a configurable number of posts, a technology stack block, an about block and a closing call to action. Every section has its own label, title and subtitle fields, and the view-all links and button texts are editable too.
 
-The homepage is the entry point into the site's product and editorial content. Customizer choices let the owner shape that presentation within the established WordPress workflow.
+## Application catalogue
 
-## Browse applications
+The App Manager adds an administration page for the application catalogue, with adding, editing, deleting and reordering done in place without page reloads. Each application has a title, description, tag, link, thumbnail, category, a type of Live, Beta or Standalone, and switches that decide whether it appears on the applications page, on the homepage or in the footer. The type sets the group heading, the badge and the button text, so a downloadable tool reads differently from a web app. The catalogue renders through one shortcode on the applications page and in the homepage teaser, with optional category filter chips and a configurable number of grid columns.
 
-Catalogue surfaces help visitors discover software products and open their detail pages. Product presentation works alongside the site's shop integration, connecting the public explanation with the next step in the buying journey. It gives applications a more useful home than a simple link list.
+## Pages and templates
 
-An application catalogue gives visitors a consistent way to discover the available products. Move from a product listing into its supporting information without losing the site's visual context.
+Dedicated templates cover the pages a product site needs: homepage, blog, about, contact, sign-in, forgot password, reset password, email verification, account, dashboard, single post, search results and a 404. The login template has a split layout and a centred one, with an editable brand title and subtitle, and the account page lets the owner choose how many columns its statistics and settings use. The blog shows an excerpt of a set number of words, and an optional reading-progress bar tracks position in a long article.
 
-## Read and explore articles
+## Customizer controls
 
-Blog layouts support browsing and reading the site's writing in the same visual language. Navigation helps readers move between articles and related areas. This keeps technical content and product discovery connected without forcing every page into the same layout.
+Appearance is controlled in one place: heading, body, navigation and logo fonts, a base font size, a colour preset, two border-radius sizes, content margins and the width of the homepage wrapper. Effects such as scroll reveal, the typewriter, the dot grid, the background animation, a back-to-top button and the reading progress can each be turned on or off. The footer brand, description, copyright, contact address and three link lists are editable, and the homepage title and description used for search results have their own fields.
 
-Article and archive views support browsing as well as arriving at a specific post. They keep the editorial side of the site connected to the wider product presentation.
+## Member shortcodes
 
-## Support member areas
+The theme registers shortcodes for content that depends on who is reading. Wrapping text in them shows it only to logged-in users, to administrators, to a chosen role or to a membership level of basic, premium or VIP, and visitors who do not qualify see a short message with a link to sign in. Further shortcodes print the signed-in user's account information, offer a logout button, and give administrators registration totals and consent counts. The theme reads the membership level from user data; granting levels and handling sign-in belongs to the site's membership tools.
 
-Account and access-related surfaces fit into the wider site presentation. Visitors can move between public content and the relevant member journey with a consistent interface. The theme works with the site's access plugins rather than presenting those flows as a separate visual experience.
+## Administration
 
-Member-related surfaces help the public site and account journey feel coherent. The theme supplies presentation while the corresponding membership tools retain their own role.
-
-## Adjust the site through WordPress
-
-Customizer controls let the operator shape supported aspects of the presentation without manually rebuilding each page. Administrator integration and compatibility with the site's plugins support routine maintenance.
-
-Central presentation choices make repeated site adjustments easier to manage. Review the affected pages in context so the homepage, catalogue and articles continue to work as one website.
-
+Pages and posts get a redesigned list screen that still uses WordPress's own queries, capability checks and trash handling, and the application manager sits in the same administration menu. A Playwright suite covers the homepage, the navigation fonts and the collapsible navigation, with visual-regression screenshots.
 
 ---
 
