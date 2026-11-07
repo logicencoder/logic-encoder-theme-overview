@@ -1,6 +1,6 @@
 # Logic Encoder Enhanced — WordPress Theme
 
-![Logic Encoder Enhanced — WordPress Theme workspace](theme.png)
+![Logic Encoder Enhanced — WordPress Theme workspace](logic-encoder-theme-wordpress-front-page.png)
 
 A WordPress site that presents software products, technical writing and member pages needs one visual system and one place to change it. Logic Encoder Enhanced is a custom theme for exactly that: a dark, technical design with a homepage built from editable sections, a manager for the application catalogue, page templates for the sign-in and account journey, and a long list of Customizer controls. It is built for a site owner who wants to change text, colours, fonts and layout from the WordPress Customizer instead of editing template files.
 
