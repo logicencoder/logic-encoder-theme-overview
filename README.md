@@ -44,3 +44,5 @@ Private code: [logic-encoder-theme](https://github.com/logicencoder/logic-encode
 See [REPOS.md](REPOS.md) for related repositories.
 
 **[Logic Encoder](https://logicencoder.com)** · [GitHub](https://github.com/logicencoder) · [Contact](https://logicencoder.com/contact/)
+
+<!-- TODO(screenshots, 2026-11-07): more screenshots -->
